@@ -70,7 +70,7 @@ public class Person implements InitializingBean, DisposableBean, BeanNameAware, 
     }
 
     /**
-     * JSR-205 定义的生命周期注解 @PostConstruct，在实例化之后执行
+     * JSR-250 定义的生命周期注解 @PostConstruct，在实例化之后执行
      */
     @PostConstruct
     public void instantiationAfter() {
@@ -95,7 +95,7 @@ public class Person implements InitializingBean, DisposableBean, BeanNameAware, 
     }
 
     /**
-     * JSR-205 定义的生命周期注解 @PreDestroy，在销毁之前执行
+     * JSR-250 定义的生命周期注解 @PreDestroy，在销毁之前执行
      */
     @PreDestroy
     private void destroyBefore() {
